@@ -1,0 +1,127 @@
+/* Reset default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body */
+body {
+  font-family: 'Poppins', sans-serif;
+  scroll-behavior: smooth;
+  background-color: #f7f7f9; /* soft neutral background */
+  color: #333;
+}
+
+/* Navigation Bar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  background-color: #2c3e50; /* elegant dark blue */
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.logo {
+  color: #ecf0f1; /* light gray */
+  font-size: 1.8em;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links li a {
+  color: #ecf0f1;
+  text-decoration: none;
+  padding: 8px 15px;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+  font-weight: 500;
+}
+
+.nav-links li a:hover {
+  background-color: #3498db; /* subtle elegant blue */
+  color: #fff;
+  transform: scale(1.05);
+}
+
+/* Sections */
+.section {
+  padding: 100px 40px;
+  text-align: center;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* Individual Section Colors */
+#home { background-color: #fef9f4; }
+#about { background-color: #f4f7f6; }
+#services { background-color: #f7f4fc; }
+#portfolio { background-color: #fcf4f4; }
+#contact { background-color: #f4f9f7; }
+
+/* Section Headings */
+.section h1 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  color: #2c3e50;
+}
+
+/* Paragraphs */
+.section p {
+  font-size: 1.2em;
+  line-height: 1.8;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+/* Lists */
+.section ul {
+  list-style: inside disc;
+  text-align: left;
+  display: inline-block;
+  margin-top: 10px;
+  color: #555;
+}
+
+.section ul li {
+  margin-bottom: 8px;
+}
+
+/* Links inside sections */
+.section a {
+  color: #3498db;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.section a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Menu */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    padding: 15px 20px;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
+    padding-top: 10px;
+  }
+
+  .section {
+    padding: 80px 20px;
+  }
+}
